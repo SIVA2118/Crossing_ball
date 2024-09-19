@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id= "ball1" style=" 
+        background-color: blue;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 5;
+        height: 100px;
+        width: 100px;
+        top: 0;
+        left: 100;">
+        </div>
+       <div id= "ball2" style=" 
+        background-color: blue;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 5;
+        height: 100px;
+        width: 100px;
+        top: 0;
+        right: 100;">
+        </div><script>
+            var velocity=2;
+            var position=0;
+            var moveleft=1;
+            var ball=document.getElementById("ball1");
+       var velocity=2;
+       var position=0;
+       var moveright=1;
+       var ball=document.getElementById("ball2");
+            function move1(){
+                position+=moveleft*velocity;
+            if(position>=95||position<=0) {
+                moveleft*=-1;
+            }
+            ball1.style.left=position+'%';
+            ball1.style.top=position+'%';
+        }
+        setInterval(move1,100)
+            function move2(){
+                position+=moveright*velocity;
+            if(position>=110||position<=0) {
+                moveright*=-1;
+            }
+            ball2.style.right=position+'%';
+            ball2.style.top=position+'%';
+        }
+            setInterval(move2,100);
+        </script>
+</body>
+</html>
