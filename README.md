@@ -1,4 +1,4 @@
-#Animated Croosing Balls Project
+Animated Croosing Balls Project
 Overview
 This project demonstrates a simple web page featuring two bouncing blue balls using HTML, CSS, and JavaScript. The balls move diagonally within the window, alternating directions once they reach the edges of the screen.
 
